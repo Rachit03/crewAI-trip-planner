@@ -16,5 +16,4 @@ arize-phoenix-otel
 
 beautifulsoup4
 streamlit_javascript
-sqlite3 >= 3.35.0
 
