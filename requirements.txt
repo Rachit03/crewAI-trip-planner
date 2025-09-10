@@ -16,5 +16,4 @@ arize-phoenix-otel
 
 beautifulsoup4
 streamlit_javascript
-pysqlite3
-chromadb
+
