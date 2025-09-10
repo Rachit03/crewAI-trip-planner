@@ -20,7 +20,7 @@ import re
 from opentelemetry.context import get_current
 from streamlit_javascript import st_javascript
 import requests
-
+from streamlit_js_eval import streamlit_js_eval
 
 
 
@@ -98,7 +98,11 @@ agents = TripAgents(llm)
 guardrails = GuardrailManager()
 
 def get_user_location():
-    ip = st_javascript("await fetch('https://api.ipify.org?format=json').then(res => res.json()).then(data => data.ip)")
+    # ip = st_javascript("await fetch('https://api.ipify.org?format=json').then(res => res.json()).then(data => data.ip)")
+    ip = streamlit_js_eval(
+        js_expressions="fetch('https://api.ipify.org?format=json').then(r => r.json()).then(d => d.ip)",
+        key="get_ip"
+    )
     print("*"*20)
     print("ip: ", ip)
     if not ip:
