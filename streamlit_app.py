@@ -18,9 +18,9 @@ tracer_provider = register(
 # from openinference.instrumentation.litellm import LiteLLMInstrumentor
 # LiteLLMInstrumentor().instrument()
 
+from openinference.instrumentation.crewai import CrewAIInstrumentor
 
 from openinference.instrumentation.litellm import LiteLLMInstrumentor
-from openinference.instrumentation.crewai import CrewAIInstrumentor
 
 LiteLLMInstrumentor().instrument(tracer_provider=tracer_provider)
 CrewAIInstrumentor().instrument(tracer_provider=tracer_provider, skip_dep_check=True)
