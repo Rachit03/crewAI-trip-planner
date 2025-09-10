@@ -133,7 +133,8 @@ def get_ip_info(ip_address):
     except Exception as e:
         return {"error": str(e)}
 
-location_data = get_user_location()
+# location_data = get_user_location()
+location_data = {}
 
 def run_crew_with_location_context(crew):
     """Wrapper to add custom attributes to crew execution"""
@@ -765,6 +766,8 @@ def travel_planning_form():
 def main():
 
     """Main function to run the Streamlit app"""
+    global location_data
+    location_data = get_user_location()
     initialize_session_state()
     display_header()
 
