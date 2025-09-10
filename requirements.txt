@@ -7,15 +7,14 @@ pandas>=2.2.0
 plotly>=5.18.0
 geopy>=2.4.1
 tiktoken>=0.5.2
-crewai
-openinference-instrumentation-crewai
+crewai>=0.11.0
 opentelemetry-api>=1.28.0
 opentelemetry-sdk>=1.28.0
 opentelemetry-exporter-otlp>=1.20.0
-
+openinference-instrumentation-crewai
 arize-phoenix-otel
-openinference.instrumentation.litellm
+
 beautifulsoup4
 streamlit_javascript
-
+sqlite3 >= 3.35.0
 
