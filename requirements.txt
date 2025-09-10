@@ -13,7 +13,7 @@ opentelemetry-sdk>=1.28.0
 opentelemetry-exporter-otlp>=1.20.0
 openinference-instrumentation-crewai
 arize-phoenix-otel
-
+openinference-instrumentation-litellm
 beautifulsoup4
 streamlit_javascript
 pysqlite3-binary
