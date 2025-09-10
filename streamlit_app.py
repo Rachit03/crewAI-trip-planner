@@ -1,4 +1,7 @@
 # Phoenix setup (must be first)
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 import os
 from phoenix.otel import register
 import streamlit as st
