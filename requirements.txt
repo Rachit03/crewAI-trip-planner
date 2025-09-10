@@ -17,4 +17,4 @@ openinference-instrumentation-litellm
 beautifulsoup4
 streamlit_javascript
 pysqlite3-binary
-
+streamlit_js_eval
